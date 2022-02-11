@@ -21,7 +21,7 @@ def get_input(event):
         global timer
         if timer < 4.9:
             # # # if decide to make timer_widget visible
-            canvas.itemconfig(timer_widget, text=round(timer))
+            #canvas.itemconfig(timer_widget, text=round(timer))
             timer += 0.1
             sleep(0.1)
             if timer > 4:
@@ -66,7 +66,7 @@ label_1.grid(row=0, column=1)
 label_2.grid(row=1, column=1, pady=15)
 
 # # # timer widget, if decide to make it visible
-timer_widget = canvas.create_text(570, 18, text="", fill='#054B07', font=('Lucida', 15, 'bold'))
+#timer_widget = canvas.create_text(570, 18, text="", fill='#054B07', font=('Lucida', 15, 'bold'))
 
 text_entry = Text(canvas, font=('Lucida', 15), width=55, height=14)
 text_entry.grid(row=5, column=0, columnspan=3)
